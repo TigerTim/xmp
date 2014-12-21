@@ -58,7 +58,8 @@ class XMP
         items = array_value.xpath("./rdf:li")
         items.map { |i| i.text }
       else
-        raise "Don't know how to handle: \n" + attribute.to_s
+        #raise "Don't know how to handle: \n" + 
+        attribute.to_s
       end
     end
 
